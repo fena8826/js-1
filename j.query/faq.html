@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            max-width: 1320px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+        a{
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            color: black;
+            background-color: rgb(211, 199, 199);
+            font-size: 18px;
+          
+        }
+        .accordian-content{
+            border: 1px solid rgb(211, 199, 199);
+            padding: 15px;
+            display: none;
+         
+        }
+        .accordian-item{
+            margin: 5px;
+        }
+    </style>
+
+</head>
+<body>
+        <section class="accordian">
+            <div class="container">
+                <div class="accordian-item">
+                    <a href="javasctipt:void(0)">Quetion-1</a>
+                    <div class="accordian-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quod adipisci debitis harum nam numquam labore et inventore facere rerum ad, quibusdam voluptatem temporibus consectetur cumque, beatae, ipsum at quis quos nihil maxime quasi explicabo tempora voluptates. Minima, consequuntur eveniet nesciunt ipsum, vitae amet optio recusandae deserunt aliquid doloremque eius et rerum ullam commodi tenetur expedita ex. Molestiae expedita corrupti libero nemo praesentium natus soluta aut laudantium recusandae odio. Molestias consequuntur impedit, autem explicabo accusamus voluptatum </p>
+                    </div>
+                </div>
+             
+                <div class="accordian-item">
+                    <a href="javasctipt:void(0)">Quetion-2</a>
+                    <div class="accordian-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quod adipisci debitis harum nam numquam labore et inventore facere rerum ad, quibusdam voluptatem temporibus consectetur cumque, beatae, ipsum at quis quos nihil maxime quasi explicabo tempora voluptates. Minima, consequuntur eveniet nesciunt ipsum, vitae amet optio recusandae deserunt aliquid doloremque eius et rerum ullam commodi tenetur expedita ex. Molestiae expedita corrupti libero nemo praesentium natus soluta aut laudantium recusandae odio. Molestias consequuntur impedit, autem explicabo accusamus voluptatum </p>
+                    </div>
+                </div>
+                <div class="accordian-item">
+                    <a href="javasctipt:void(0)">Quetion-3</a>
+                    <div class="accordian-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quod adipisci debitis harum nam numquam labore et inventore facere rerum ad, quibusdam voluptatem temporibus consectetur cumque, beatae, ipsum at quis quos nihil maxime quasi explicabo tempora voluptates. Minima, consequuntur eveniet nesciunt ipsum, vitae amet optio recusandae deserunt aliquid doloremque eius et rerum ullam commodi tenetur expedita ex. Molestiae expedita corrupti libero nemo praesentium natus soluta aut laudantium recusandae odio. Molestias consequuntur impedit, autem explicabo accusamus voluptatum </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+    <script>
+        $(".accordian-item a").click(function(){
+            $(this).parent(".accordian-item").find(".accordian-content").slideDown();
+             $(this).parent(".accordian-item").prev(".accordian-item").find(".accordian-content").slideUp();
+        });
+    </script>
+</body>
+</html>

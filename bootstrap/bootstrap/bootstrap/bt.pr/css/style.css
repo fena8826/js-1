@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Jost'!important;
+}
+.carousel-item h2 + a , .about-content a{
+    background-color: #fd7e14;
+}
+/* HEADER */
+
+header nav ul li:first-child a{
+    color: #fd7e14!important;
+}
+.carousel-item{
+    background: url(../img/hero-bg.jpg) rgba(0,0, 0, 0.5);
+    height: 900px;
+    object-position:bottom;
+    object-fit: cover;
+    background-blend-mode:overlay;
+
+}
+.carousel-item:nth-child(2){
+    background: url(../img/hero-bg-2.jpg) rgba(0,0, 0, 0.5);
+    height: 900px;
+    object-position:bottom;
+    object-fit: cover;
+    background-blend-mode:overlay;
+
+}
+.carousel-item:last-child{
+    background: url(../img/hero-bg-3.jpg) rgba(0,0, 0, 0.5);
+    height: 900px;
+    object-position:bottom;
+    object-fit: cover;
+    background-blend-mode:overlay;
+
+}
+.carousel-item h6{
+    letter-spacing: 4px;
+}
+.carousel-item  a{
+    border: 2px solid #fd7e14;
+}
+.carousel-item h6{
+    color: #fd7e14;
+}
+
+.carousel-item h2 + a:hover{
+    background-color: #051922;
+    border: 2px solid  #051922;
+}
+.carousel-control-prev{
+    height: 50px;
+    width: 50px;
+}
+.carousel-control-next{
+    height: 50px;
+    width: 50px;
+}
+.carousel-control-prev{
+    left: 50;
+}
+.carousel-control-next{
+    right: 50;
+    
+}
+
+/* SUPPORT */
+.support-item i{
+    color: #fd7e14;
+    border: 2px dotted #fd7e14;
+
+}
+
+/* PRODUCT */
+
+h2 > span{
+    color: #fd7e14;
+}
+.product-title{
+    margin-top: 100px;
+}
+.product-title h2 + span{
+    height: 3px;
+    width: 60px;
+    background-color: #fd7e14;
+    
+
+}
+.product-item h2 +a{
+    background-color: #fd7e14;
+}
+.product-item h2 +a:hover ,.deal-content a:hover , .news-btn a{
+    background-color:#051922;
+}
+
+/* DEALS */
+
+.deal{
+    background-color: #f5f5f5;
+}
+.deal-content{
+    margin-top: 80px;
+}
+.deal-content ul li{
+    border: 3px solid #fd7e14;
+}
+.deal-content ul li > span{ 
+   color: #fd7e14;
+}
+.deal-content a , .news-btn a{
+    background-color: #fd7e14;
+}
+/* TEASTIMONIALS */
+
+.testimonials .slider{
+    max-width: 600px;
+}
+.testimonials{
+    margin-top:150px;
+}
+/* ABOUT */
+.about-content a:hover , .news-btn a:hover{
+    background-color:#051922;
+    color: #fd7e14;
+}
+.about-content a , .news-btn a{
+    color: white;
+}
+.about-img {
+    border-radius:top;
+}
+
+/* DISCOUNT */
+.discount-img{
+    margin-top: 100px;
+    margin-bottom;
+}
+/* NEWS */
+.news-btn{
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+/* CLIENT */

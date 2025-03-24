@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="accordion" id="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" >
+                  Accordion Item
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion">
+                <div class="accordion-body">
+                    <p>This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                  Accordion Item 2
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo beatae ducimus voluptas perferendis quia deserunt tempora commodi quaerat nesciunt laboriosam?</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                  Accordion Item 3
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aut modi. Explicabo non dignissimos, cupiditate voluptatum illum porro architecto cumque?</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- POPOVER -->
+           <!-- <button  class="btn btn-secondary" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?" data-bs-toggle="popover" style="margin: 200px;">click hear</button> -->
+
+            <!-- TOOLTIP
+           <button  class="btn btn-secondary" data-bs-title="assdfghjklpouiuyyttrrew" data-bs-toggle="tooltip" style="margin: 200px;">click hear</button> -->
+    </div>
+    
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+        // TOOLTIP
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+</html>
