@@ -69,7 +69,7 @@
 // // }
 
 // let bill = 1.20                 ;
- 
+
 
 // if  (units <= 100){
 //     bill = units * 1.20;
@@ -127,7 +127,21 @@
 // }
 // console.log(tax);
 
+let oldpass = 1000;
+let newpass = 2000;
+let pass = 5000;
 
+if (oldpass == pass) {
+    console.log("old pass and new pass are same");
+}
+else {
+    if (newpass == pass) {
+        console.log("pass are the chage")
+    }
+    else {
+        console.log("pass are not the match");
+    }
+}
 
 
 
