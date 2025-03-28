@@ -129,7 +129,7 @@
 
 let oldpass = 1000;
 let newpass = 2000;
-let pass = 5000;
+let pass = 2000;
 
 if (oldpass == pass) {
     console.log("old pass and new pass are same");
